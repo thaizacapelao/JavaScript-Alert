@@ -1,16 +1,19 @@
-alert('Bem vindo ao jogo Secret Number!');
+// alert('Bem vindo ao jogo Secret Number!');
 
-let numeroSecreto = 29;
+// let numeroSecreto = 7;
+// console.log(numeroSecreto);
 
-let chute = prompt('Digite um número entre 1 e 30');
+// let chute = prompt('Digite um número entre 1 e 30');
+// console.log(chute);
 
+// //Se o chute for igual ao npumero secreto retorne a mensagem 'Você descobriu o Secret Number (29)' Se não vai aparecer um alert com a mensagem: 'Você errou o número :('
+// if (chute == numeroSecreto) {
+//     alert(`Parabéns! Você acertou o número secreto ${numeroSecreto}! :D`);
+// } else {
+//     alert('Você errou o número Secreto :(');
+// };
 
-if (chute == numeroSecreto) {
-    console.log('Você descobriu o Secret Number (29)');
-} else {
-    console.log('Você errou o número');
-};
-
+// console.log(chute);
 
 // == Usamamos dois == para comparações;
 
@@ -35,3 +38,20 @@ if (chute == numeroSecreto) {
 
 // console.log(nome);
 // console.log(idade);
+
+
+// Desafio 2:
+
+// alert('Olá, Seja bem vindo(a)!')
+
+// let dia = 'domingo';
+
+// dia = prompt('Poderia me dizer que dia da semana é hoje?');
+
+//     if(dia == 'domingo' || dia == 'sabado') {
+//         alert('Bom fim de semana!');
+//     } else {
+//         alert('Boa semana!');
+//     }
+
+// console.log(dia);
