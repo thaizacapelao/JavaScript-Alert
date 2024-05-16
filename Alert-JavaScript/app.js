@@ -64,3 +64,18 @@
 // } else {
 //     alert('O número é negativo');
 // }
+
+//Desafio 4:
+
+// alert('Seja bem vindo ao banco, aqui você pode consultar o seu saldo!');
+// saldo = '200' + 'R$';
+// saldo = prompt('Digite quanto você gostaria de depositar.')
+
+// if(saldo == null) {
+//     alert('Você não depositou nenhum valor!')
+//     saldo = 0;
+// }
+
+// alert(`Você tem disponivel na conta um valor de ${saldo}.`);
+
+// console.log(saldo);
