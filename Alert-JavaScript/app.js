@@ -4,31 +4,34 @@ let numeroSecreto = 7;
 console.log(numeroSecreto);
 
 let chute;
+let tentativas = 1;
 console.log(chute);
 
 //while = enquanto
 // enquanto o chute não for igual ao número secreto...
 while (chute != numeroSecreto) {
-  chute = prompt("Digite um número entre 1 e 30");
+    chute = prompt("Digite um número entre 1 e 30");
   if (chute == numeroSecreto) {
-    alert(`Parabéns! Você acertou o,, número secreto ${numeroSecreto}! :D`);
+    alert(`Parabéns! Você acertou o,, número secreto ${numeroSecreto}, com ${tentativas} tentativas! :D`);
   } else {
-    if(chute == null) {
-        alert('Você não digitou nenhum número, volte e informe.');
-      } else if (chute > numeroSecreto) {
+    if (chute == null) {
+      alert("Você não digitou nenhum número, volte e informe.");
+    } else if (chute > numeroSecreto) {
       alert(`O numero secreto é menor que ${chute}...`);
     } else {
       alert(`O numero secreto é maior que ${chute}...`);
     }
+    // tentativas = tentativas + 1;
+    tentativas++;
   }
 }
+
+console.log(tentativas);
 
 //if = se
 //else = senão
 
 //Se o chute for igual ao numero secreto retorne a mensagem 'Você descobriu o Secret Number (29)' Se não vai aparecer um alert com a mensagem: 'Você errou o número :('
-
-   
 
 console.log(chute);
 
