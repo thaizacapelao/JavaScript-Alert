@@ -1,22 +1,38 @@
-// alert('Bem vindo ao jogo Secret Number!');
+alert("Bem vindo ao jogo Secret Number!");
 
-// let numeroSecreto = 7;
-// console.log(numeroSecreto);
+let numeroSecreto = 7;
+console.log(numeroSecreto);
 
-// let chute = prompt('Digite um número entre 1 e 30');
-// console.log(chute);
+let chute;
+console.log(chute);
 
-// //Se o chute for igual ao npumero secreto retorne a mensagem 'Você descobriu o Secret Number (29)' Se não vai aparecer um alert com a mensagem: 'Você errou o número :('
-// if (chute == numeroSecreto) {
-//     alert(`Parabéns! Você acertou o número secreto ${numeroSecreto}! :D`);
-// } else {
-//     alert('Você errou o número Secreto :(');
-// };
+//while = enquanto
+// enquanto o chute não for igual ao número secreto...
+while (chute != numeroSecreto) {
+  chute = prompt("Digite um número entre 1 e 30");
+  if (chute == numeroSecreto) {
+    alert(`Parabéns! Você acertou o,, número secreto ${numeroSecreto}! :D`);
+  } else {
+    if(chute == null) {
+        alert('Você não digitou nenhum número, volte e informe.');
+      } else if (chute > numeroSecreto) {
+      alert(`O numero secreto é menor que ${chute}...`);
+    } else {
+      alert(`O numero secreto é maior que ${chute}...`);
+    }
+  }
+}
 
-// console.log(chute);
+//if = se
+//else = senão
+
+//Se o chute for igual ao numero secreto retorne a mensagem 'Você descobriu o Secret Number (29)' Se não vai aparecer um alert com a mensagem: 'Você errou o número :('
+
+   
+
+console.log(chute);
 
 // == Usamamos dois == para comparações;
-
 
 // Desafio:
 
@@ -38,7 +54,6 @@
 
 // console.log(nome);
 // console.log(idade);
-
 
 // Desafio 2:
 
@@ -79,7 +94,6 @@
 
 // console.log(saldo);
 
-
 // Desafio 5:
 
 // alert('Olá, poderia se idenficar por favor? Como devo chama-lo(a)?');
@@ -87,7 +101,7 @@
 // nome = prompt('Digite seu nome por gentileza!');
 
 //     if(nome == null) {
-//     alert('Você não me informou seu nome :(') 
+//     alert('Você não me informou seu nome :(')
 //     }  else {
 //     alert(`Oh! Entendi! Então seja bem vindo(a) ${nome}.`);
 //     };
