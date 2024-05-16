@@ -65,17 +65,29 @@
 //     alert('O número é negativo');
 // }
 
-//Desafio 4:
+// Desafio 4:
 
 // alert('Seja bem vindo ao banco, aqui você pode consultar o seu saldo!');
-// saldo = '200' + 'R$';
 // saldo = prompt('Digite quanto você gostaria de depositar.')
 
 // if(saldo == null) {
 //     alert('Você não depositou nenhum valor!')
-//     saldo = 0;
+//     saldo = 0 + 'R$';
 // }
 
-// alert(`Você tem disponivel na conta um valor de ${saldo}.`);
+// alert(`Você tem disponivel na conta um valor de ${saldo} R$.`);
 
 // console.log(saldo);
+
+
+// Desafio 5:
+
+// alert('Olá, poderia se idenficar por favor? Como devo chama-lo(a)?');
+
+// nome = prompt('Digite seu nome por gentileza!');
+
+//     if(nome == null) {
+//     alert('Você não me informou seu nome :(') 
+//     }  else {
+//     alert(`Oh! Entendi! Então seja bem vindo(a) ${nome}.`);
+//     };
