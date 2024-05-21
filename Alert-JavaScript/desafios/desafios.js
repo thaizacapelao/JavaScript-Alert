@@ -98,3 +98,14 @@
 // for(var i = 10; i > 0; i--) {
 //     alert(`O número é ${i}`)
 // }
+
+
+//Desafio 8:
+
+let numero = prompt("Digite um número para iniciar a contagem regressiva:");
+
+// Loop while para contagem regressiva
+while (numero >= 0) {
+  console.log(numero);
+  numero--;
+}
