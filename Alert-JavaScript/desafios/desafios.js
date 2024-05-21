@@ -102,10 +102,20 @@
 
 //Desafio 8:
 
-let numero = prompt("Digite um número para iniciar a contagem regressiva:");
+// let numero = prompt("Digite um número para iniciar a contagem regressiva:");
 
-// Loop while para contagem regressiva
-while (numero >= 0) {
-  console.log(numero);
-  numero--;
-}
+// // Loop while para contagem regressiva
+// while (numero >= 0) {
+//   console.log(numero);
+//   numero--;
+// }
+
+//Desafio 9:
+
+// let numero = prompt("Digite um número para iniciar a contagem progressiva:");
+
+// // Loop while para contagem progressiva
+// while (numero <= 0) {
+//   console.log(numero);
+//   numero++;
+// }
