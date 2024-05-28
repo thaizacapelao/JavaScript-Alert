@@ -12,7 +12,7 @@ console.log(chute);
 while (chute != numeroSecreto) {
     chute = prompt("Digite um número entre 1 e 30");
   if (chute == numeroSecreto) {
-    alert(`Parabéns! Você acertou o,, número secreto ${numeroSecreto}, com ${tentativas} tentativas! :D`);
+    break;
   } else {
     if (chute == null) {
       alert("Você não digitou nenhum número, volte e informe.");
@@ -25,6 +25,13 @@ while (chute != numeroSecreto) {
     tentativas++;
   }
 }
+
+    if (tentativas > 1) {
+      alert(`Parabéns! Você acertou o,, número secreto ${numeroSecreto}, com ${tentativas} tentativas! :D`);
+    } else {
+    alert(`Parabéns! Você acertou o,, número secreto ${numeroSecreto}, com ${tentativas} tentativa! :D`);
+    }
+
 
 console.log(tentativas);
 
