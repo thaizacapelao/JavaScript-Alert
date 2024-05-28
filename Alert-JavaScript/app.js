@@ -25,13 +25,10 @@ while (chute != numeroSecreto) {
     tentativas++;
   }
 }
+    // Operadpr Ternario
+    let palavraTentativa = tentativas > 1 ? 'tentativas! :D' : 'tentativa! :D';
 
-    if (tentativas > 1) {
-      alert(`Parabéns! Você acertou o,, número secreto ${numeroSecreto}, com ${tentativas} tentativas! :D`);
-    } else {
-    alert(`Parabéns! Você acertou o,, número secreto ${numeroSecreto}, com ${tentativas} tentativa! :D`);
-    }
-
+    alert(`Parabéns! Você acertou o número secreto ${numeroSecreto}, com ${tentativas} ${palavraTentativa}`);
 
 console.log(tentativas);
 
