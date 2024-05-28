@@ -119,3 +119,29 @@
 //   console.log(numero);
 //   numero++;
 // }
+
+//Desafio 10:
+
+// let nome = "Thaiza";
+
+// alert(`Ola, ${nome}!`);
+// console.log(`Olá, ${nome}!`);
+
+// let linguagem = prompt('Qual a linguagem de programação que você mais gosta?');
+
+// console.log(linguagem);
+
+// valor1 = 7;
+// valor2 = 9;
+
+// resultado = valor1 + valor2;
+
+// console.log(`A soma de ${valor1} e ${valor2} é igual a ${resultado}`);
+
+// let idade = prompt('Qual sua idade?')
+
+//   if(idade >= 18) {
+//     alert("Você é maior de idade")
+//   } else {
+//     alert("Você não é maior de idade!!")
+//   }
