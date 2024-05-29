@@ -1,6 +1,6 @@
 alert("Bem vindo ao jogo Secret Number!");
 
-let numeroMaximo = 100;
+let numeroMaximo = 10;
 let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log(numeroSecreto);
 
@@ -11,25 +11,40 @@ console.log(chute);
 //while = enquanto
 // enquanto o chute não for igual ao número secreto...
 while (chute != numeroSecreto) {
-    chute = prompt(`Digite um número entre 1 e ${numeroMaximo}`);
+  chute = prompt(`Digite um número entre 1 e ${numeroMaximo}`);
+
+  if (chute === null) {
+    alert("Você não digitou nenhum número, volte e informe.");
+    continue; // Pula para a próxima iteração do loop sem incrementar tentativas
+  }
+
+  chute = Number(chute); // Converte o chute para número
+
+  if (isNaN(chute) || chute < 1 || chute > numeroMaximo) {
+    alert(`Por favor, digite um número válido entre 1 e ${numeroMaximo}`);
+    continue; // Pula para a próxima iteração do loop sem incrementar tentativas
+  }
+
+// tentativas = tentativa + 1;
+  tentativas++;
+
   if (chute == numeroSecreto) {
+    document
+      .querySelectorAll(".success")
+      .forEach((el) => el.classList.remove("hidden"));
     break;
+  } else if (chute > numeroSecreto) {
+    alert(`O número secreto é menor que ${chute}...`);
   } else {
-    if (chute == null) {
-      alert("Você não digitou nenhum número, volte e informe.");
-    } else if (chute > numeroSecreto) {
-      alert(`O numero secreto é menor que ${chute}...`);
-    } else {
-      alert(`O numero secreto é maior que ${chute}...`);
-    }
-    // tentativas = tentativas + 1;
-    tentativas++;
+    alert(`O número secreto é maior que ${chute}...`);
   }
 }
-    // Operador Ternario
-    let palavraTentativa = tentativas > 1 ? 'tentativas! :D' : 'tentativa! :D';
+// Operador Ternario
+let palavraTentativa = tentativas > 1 ? "tentativas! :D" : "tentativa! :D";
 
-    alert(`Parabéns! Você acertou o número secreto ${numeroSecreto}, com ${tentativas} ${palavraTentativa}`);
+alert(
+  `Parabéns! Você acertou o número secreto ${numeroSecreto}, com ${tentativas} ${palavraTentativa}`
+);
 
 console.log(tentativas);
 
