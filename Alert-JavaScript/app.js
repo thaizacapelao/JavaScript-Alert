@@ -5,7 +5,7 @@ let numeroSecreto = parseInt(Math.random() * numeroMaximo + 1);
 console.log(numeroSecreto);
 
 let chute;
-let tentativas = 1;
+let tentativas = 0;
 console.log(chute);
 
 //while = enquanto
